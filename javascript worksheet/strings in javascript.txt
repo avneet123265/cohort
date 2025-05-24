@@ -1,0 +1,122 @@
+setion a
+1 "ALPHAINTERN"
+2."dev"
+3."Intern"
+4.true
+5.65
+      section B
+1.let name = "Riya";
+let score = 92;
+console.log(`Hello ${name}, you scored ${score} in Web Development!`);
+ 2. let myName = "Riya";
+console.log(myName);
+3. let combined = "Alpha" + "Intern";
+console.log(combined);
+
+ 4. console.log("AlphaIntern"[3]);
+ 5.console.log("backend developer".toUpperCase());
+
+6. console.log("MERN STACK".toLowerCase());
+
+7. console.log("AlphaIntern".length):
+                                      Section C: Fill in the Blanks
+Template literals are enclosed by backticks (`) instead of quotes.
+
+str.split("") will return an array of characters.
+
+str.toLowerCase() is used to convert a string to lowercase.
+
+str.replaceAll("a", "z") replaces all occurrences of "a".
+
+str.startsWith("web") returns a boolean value.
+
+Section D: Searching and Checking
+javascript
+Copy
+Edit
+6. Check if "developer" contains "love"
+console.log("developer".includes("love"));
+7.console.log("AlphaIntern".startsWith("Alpha")); // true
+
+ 8. console.log("AlphaIntern".endsWith("tern"));
+
+ 9.console.log("JavaScript".indexOf("a")); 
+
+10. console.log("I am a Backend Developer".includes("Backend")); // true
+Section E: Modifying Strings
+
+ 1. Replace "Intern" with "Mentor"
+console.log("AlphaIntern".replace("Intern", "Mentor"));
+
+ 2. Replace all "a" with "z"
+console.log("banana".replaceAll("a", "z"));
+
+ 3. Trim spaces
+console.log(" JavaScript is awesome ".trim());
+
+ 4. Extract "Intern"
+console.log("AlphaIntern".slice(5));
+
+ 5. Extract "Alpha"
+console.log("AlphaIntern".slice(0, 5));
+Section F: Arrays and Characters
+
+ 1. Convert to array of words
+console.log("I love coding".split(" "));
+
+ 2. Convert "Alpha" to array of characters
+console.log("Alpha".split(""));
+
+3. ASCII of 'A'
+console.log("A".charCodeAt(0));
+
+ 4. Join ["web", "dev"]
+console.log(["web", "dev"].join(" "));
+
+ 5. Modify string
+let jsStr = "JavaScript is Awesome";
+console.log(jsStr.toLowerCase()); 
+console.log(jsStr.toUpperCase()); 
+console.log(jsStr.replace("Awesome", "Powerful")); 
+console.log(jsStr.startsWith("Java")); 
+
+ 6. Extract "WebDev"
+console.log("AlphaIntern WebDev".split(" ")[1]);
+
+ 7. Convert string to array
+console.log("apple, banana, grape".split(", "));
+Section G: Problem Solving
+
+ 1. Count vowels
+function countVowels(str) {
+    let vowels = "aeiouAEIOU";
+    return str.split("").filter(char => vowels.includes(char)).length;
+}
+console.log(countVowels("Hello World")); // Example
+
+ 2. Reverse a string
+function reverseString(str) {
+    return str.split("").reverse().join("");
+}
+console.log(reverseString("Alpha"));
+
+3. Palindrome check
+function isPalindrome(str) {
+    let cleaned = str.toLowerCase().replace(/[^a-z]/g, '');
+    return cleaned === cleaned.split("").reverse().join("");
+}
+console.log(isPalindrome("Madam")); // true
+
+ 4. Capitalize first letter of each word
+function capitalizeWords(str) {
+    return str.split(" ").map(word => word[0].toUpperCase() + word.slice(1)).join(" ");
+}
+console.log(capitalizeWords("i love javascript"));
+
+ 5. Count "Alpha" using replaceAll and length
+function countAlphaOccurrences(str) {
+    let originalLength = str.length;
+    let removedAlpha = str.replaceAll("Alpha", "");
+    return (originalLength - removedAlpha.length) / 5;
+}
+console.log(countAlphaOccurrences("AlphaAlphaInternAlpha"));
